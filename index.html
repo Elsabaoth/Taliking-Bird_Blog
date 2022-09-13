@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning bootstrap</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <style type="text/css">
+    .font-sm {
+      font-size: 12px;
+    }
+    .font-md {
+      font-size: 14px;
+    }
+    .font-lg {
+      font-size: 15px;
+    }
+    .font-blue {
+      color: steelblue;
+    }
+    .font-red {
+      color: orangered;
+    }
+    .bg-burlywood {
+      background-color: burlywood;
+    }
+    a {
+      text-decoration: none;
+    }
+    .border-brown {
+      border-bottom: 2px solid saddlebrown;
+    }
+    .border-right {
+      border-right: 2px solid deeppink;
+    }
+    .border-bottom-deeppink {
+      border-bottom: 2px solid deeppink;
+    }
+    .flex {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-link-text-white a {
+      color: white;
+    }
+    .font-deeppink {
+      color: deeppink;
+    }
+    .w172-h176 {
+      width: 172px; height: 176px;
+    }
+    .w240-h138 {
+      width: 240px; height: 138px;
+    }
+    .w40-h40 {
+      width: 40px; height: 40px;
+    }
+    .w-235 {
+      width: 235px;
+    }
+    .h-124 {
+      height: 140px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container-fluid row bg-dark text-light d-flex align-items-center mx-0 px-0">
+      <div class="col pt-3">
+        <img src="./assets/images/talking_bird.jpg" alt="" class="mx-3 rounded-circle" style="width:65px; height:65px;">
+        <p class="font-md"><b class="font-blue">Talking</b> <b class="font-red">Bird</b></p>
+      </div>
+      <div class="col d-flex justify-content-end">
+        <div class="btn btn-danger py-3 mx-2 font-sm" style="width:90px; height:50px;">
+          Sign up
+        </div>
+        <div class="btn btn-primary py-3 font-sm" style="width:90px; height:50px;">
+          Sign in
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="">
+    <div class="container-fluid d-flex align-items-center py-2 border-bottom border-info">
+      <div class="btn-group" style="width: 200px" role="group">
+        <button type="button" class="btn btn-outline-primary btn-sm">Home</button>
+        <button type="button" class="btn btn-outline-primary btn-sm">About</button>
+      </div>
+      <div class="d-flex justify-content-end align-items-center mx-2 font-lg" style="width: 1500px;">
+        <div class="mx-2">
+          <a class="nav-link dropdown-toggle text-primary" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">News</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item font-sm" href="#">World News</a></li>
+            <li><a class="dropdown-item font-sm" href="#">Politics</a></li>
+            <li><a class="dropdown-item font-sm" href="#">Entertainment</a></li>
+            <li><a class="dropdown-item font-sm" href="#">Business</a></li>
+            <li><a class="dropdown-item font-sm" href="#">Industry</a></li>
+            <li><a class="dropdown-item font-sm" href="#">Technology</a></li>
+          </ul>
+        </div>
+        <div class="mx-2">
+          <a href="">Events</a>
+        </div>
+        <div class="mx-2">
+          <a href="">Trending</a>
+        </div>
+        <div class="mx-2">
+          <a href="">Commerce</a>
+        </div>
+        <div class="mx-2">
+          <a href="">Arts</a>
+        </div>
+        <div class="mx-2">
+          <a href="">Chat Room</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <div class="container-fluid my-3 d-flex justify-content-around">
+      <div class="row">
+        <div class="col flex align-items-center mx-5">
+          <img src="./assets/images/explore_the_world.jpg" alt="" class="w172-h176 rounded-circle" />
+          <a href="" class="font-sm ps-1">Explore The World With Us <b>→</b></a>
+        </div>
+        <div class="col flex align-items-center mx-5">
+          <img src="./assets/images/join_our_business.jpg" alt="" class="w172-h176 rounded-circle" />
+          <a href="" class="font-sm ps-1">Join Our Business <b>→</b></a>
+        </div>
+        <div class="col flex align-items-center pb-4 mx-5">
+          <img src="./assets/images/see_from_our_eyes.jpg" alt="" class="w172-h176 rounded-circle" />
+          <a href="" class="font-sm ">See From Our Eyes<b> →</b></a>
+        </div>
+        <div class="col flex align-items-center mx-5">
+          <img src="./assets/images/blogger.jpg" alt="" class="w172-h176 rounded-circle" />
+          <a href="" class="font-sm ps-1">Become A Blogger <b>→</b></a>
+        </div>
+        <div class="col flex align-items-center mx-5">
+          <img src="./assets/images/news-go.jpg" alt="" class="w172-h176 rounded-circle" />
+          <a href="" class="font-sm ps-1">Go Where The News Go <b>→</b></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 col-sm-12 px-0">
+          <img src="./assets/images/pope-francis.jpg" class="w-100" alt="" style="height: 550px">
+        </div>
+        <div class="col-md-4 col-sm-12 bg-dark text-light px-3 py-4  flex align-items-center justify-content-center" style="height: 550px">
+          <h3><i>Story of the day...</i></h3>
+          <h5 class="mt-5">Pope Francis in the White House</h5>
+          <p class="font-md text-center mt-2">On the 21st of March, Pope Francis the 1st pays a papal visit to the white house with a message of hope for America.</p>
+          <p class="btn btn-outline-danger font-md mt-3 float-end me-2">More information <b>→</b></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-fluid py-3 bg-burlywood">
+      <div>
+        <h4 class="font-red">Featured Stories</h4>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="w-100 border border-3 rounded shadow mb-4">
+            <img src="./assets/images/FBI.jpg" alt="" class="img-fluid pt-2 px-1 w-100 h-124">
+            <p class="mt-2 font-sm text-decoration-underline"> FBI takes down Nigerian fraudsters in $46M case.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+         <div class="w-100 border border-3 rounded shadow mb-4">
+           <img src="./assets/images/collaborate.jpg" alt="" class="img-fluid pt-2 px-1 w-100 h-124">
+           <p class="mt-2 font-sm text-decoration-underline">Nigeria and Germany set to collaborate in e-commerce.</p>
+         </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="w-100 border border-3 rounded shadow mb-4">
+            <img src="./assets/images/jungle-shooting.jpg" alt="" class="img-fluid pt-2 px-1 w-100 h-124">
+            <p class="mt-2 font-sm text-decoration-underline">Kenyan aspirant set for 2022 jungle shooting hackathon.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="w-100 border border-3 rounded shadow mb-4">
+            <img src="./assets/images/electric-bum-wiper.jpg" alt="" class="img-fluid pt-2 px-1 w-100 h-124">
+            <p class="mt-2 font-sm text-decoration-underline">Inventor Graham killed by his electric bum wiper machine.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-fluid bg-dark text-light border-3 d">
+      <div class="text-center font-sm py-3">
+        <h5>Today's Quote</h5>
+        <q class="font-sm">I love spiders, they know 'on top' is where they belong. That's why they go about spurring their webs on house-tops and tree-tops just to make a home</q> - <b>Ohuche Simon</b>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-fluid border-bottom-deeppink">
+      <div class="p-2 my-3">
+        <form action="" method="post">
+          <div class="row">
+            <label class="col-10"><b class="font-md mx-0">Do you want to recieve our updates? Kindly join our news letter.</b>
+              <div class="d-flex">
+                <input type="text" name="newslettter" placeholder="john@gmail.com" class="d-flex px-2 font-md border border-2 border-danger" style="width:300px; height:50px;"></label>
+                <a href="" class="col-2">
+                  <button class="bg-danger border border-danger" style="width:100px; height: 50px;"><b class="text-white">Join</b></button>
+                </a>
+              </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-fluid">
+      <div class="row my-2">
+        <div class="col-6 border-right border-3">
+          <p class="text-danger"><b>For more informations, please reach out to us;</b></p>
+          <address>
+            <p class="font-sm" style="width:250px;">No 10 Surulere building complex, 4th floor, Ikeja expressway, Lagos, Nigeria.</p>
+            <p><a href="mailto:talkingbirdbloggers@gmail.com" class="link-danger font-sm text-decoration-underline">talkingbirdbloggers@gmail.com</a></p>
+          </address>
+        </div>
+        <div class="col-6 px-3 text-danger">
+          <p><b>Connect with us through social media;</b></p>
+          <a href=""><img src="./assets/icons/facebook.svg" alt="facebook_image" class="w40-h40"></a>  <a href=""><img src="./assets/icons/twitter.svg" alt="twitter_image" class="w40-h40"></a>  <a href=""><img src="./assets/icons/linkedin.svg" alt="linkedin" class="w40-h40"></a>   <a href=""><img src="./assets/icons/youtube-square.svg" alt="youtube" class="w40-h40"></a>  <a href=""><img src="./assets/icons/instagram-square.svg" alt="" class="w40-h40"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container-fluid bg-dark py-3">
+      <div class="my-3 d-flex justify-content-evenly">
+        <div class="font-sm flex footer-link-text-white">
+          <a href="">Address</a>
+          <a href="">Connect With Us</a>
+        </div>
+        <div class="font-sm flex footer-link-text-white">
+          <a href="">News</a>
+          <a href="">Events</a>
+          <a href="">Trending</a>
+          <a href="">Commerce</a>
+          <a href="">Arts</a>
+          <a href="">Chat Room</a>
+        </div>
+        <div class="font-sm flex footer-link-text-white">
+          <a href="">Explore The World With Us</a>
+          <a href="">Join Our Bussiness</a>
+          <a href="">See From Our Eyes</a>
+          <a href="">Become A Blogger</a>
+          <a href="">Go Where The News Go</a>
+        </div>
+        <div class="font-sm flex footer-link-text-white">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Sign in</a>
+          <a href="">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="container-fluid bg-dark border-top border-light text-center text-light font-sm py-2">
+    <div>
+      Copyright &copy; 2022 Flying Bird
+    </div>
+  </div>
+  <script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
